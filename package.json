@@ -1,0 +1,54 @@
+{
+  "name": "windows-layout",
+  "version": "1.0.5",
+  "description": "A powerful Windows 11 desktop application that saves and restores window layouts across multiple virtual desktops with custom hotkey support",
+  "keywords": [
+    "windows",
+    "window-manager",
+    "layout",
+    "virtual-desktop",
+    "windows-11",
+    "productivity",
+    "desktop",
+    "hotkey",
+    "autohotkey"
+  ],
+  "author": "fullstacktard",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fullstacktard/windows-layout.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fullstacktard/windows-layout/issues"
+  },
+  "homepage": "https://github.com/fullstacktard/windows-layout#readme",
+  "bin": {
+    "windows-layout": "./bin/cli.js"
+  },
+  "main": "index.js",
+  "files": [
+    "bin/",
+    "lib/",
+    "WindowLayoutManager.ahk",
+    "WindowLayoutManager.exe",
+    "README.md",
+    "QUICKSTART.md",
+    "COMPILE.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "os": [
+    "win32",
+    "linux"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "postinstall": "node bin/postinstall.js"
+  }
+}
